@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitted</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        body {
+            background-color: rgb(69, 69, 69);
+            color:white;
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form has been successfully submitted ✅</h1>
+    <h3 class="redg"></h3>
+    <script>
+        for (let i = 0; i < 6; i++) {
+            setTimeout(() => {
+                let x=5-i
+                document.querySelector(".redg").innerHTML = `Redirecting to 'Rahul Makes' Website in ${x} seconds`;
+            }, i*1000);
+
+        }
+        setTimeout(() => {
+            window.location.href = "/"
+        }, 5000);
+    </script>
+</body>
+
+</html>
